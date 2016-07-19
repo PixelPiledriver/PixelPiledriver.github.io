@@ -1,12 +1,118 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
 <html><head>
-<meta content="text/html; charset=ISO-8859-1" http-equiv="content-type"><title>index</title></head>
-<body style="background-color: rgb(204, 204, 255); color: rgb(0, 0, 0);" alink="#ee0000" link="#0000ee" vlink="#551a8b">
-<div style="text-align: center; background-color: rgb(153, 153, 191);"><big style="font-family: Arial Black;"><big><big><big>PixelPiledriver</big></big></big></big><br>
-<p><img style="width: 448px; height: 128px;" src="images/Boiling_4_x2_alpha.gif" alt=""></p>
-</div>
-<br>
-Yo!<br>So I'm just starting out with html, javascript, css, etc.<br>No idea what im doing with this yet.<br>Just chill out and maybe one day this site will actually be cool.<br>Until then... it's complete trash!<br><br>Have fun!<br>~ PPD<br>
-<br>
+<meta content="text/html; charset=ISO-8859-1" http-equiv="content-type"><title>Main</title>
 
+<script>
+function nextThing() {
+document.getElementById("suck").src = "cool guy is happy.gif";
+document.getElementById("hiddenButton").style.display = "block";
+}
+</script>
+<script src="scripts/ComicButtons.js"></script></head>
+<body style="background-color: rgb(153, 153, 153); color: rgb(0, 0, 0);" alink="#ee0000" link="#0000ee" vlink="#551a8b">
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+&nbsp; <br>
+<div style="text-align: center;"><img src="images/TinyFlame.gif" alt=""><big><big><big><big>Mega Blast</big></big></big></big><img src="images/TinyFlame.gif" alt=""><br>Digital Magazine<br></div>
+<div style="text-align: center;"><br>
+</div>
+
+<div style="text-align: center;"><a href="#wat">Skip to Content</a></div><!-- The text for the tutorial is a general text. It was by chance
+that I was reading a book by Jim Corbett when I was planning
+about the text to be used for the tutorial. So I wrote a few
+paragraphs with the information I collected from a couple of
+books and several websites. I donot guarantee for the
+information to be correct. So, if you want detailed
+information about Corbett National Park, consult tourist
+books, and the WWW. In case you want to change the text,
+please make sure that neither the new text is not copyrighted
+nor you should use copyrighted images. All text and images
+used in the tutorial are supposed to be distributed under the
+GNU GPL, and MPL license. -->
+<h1 style="background-color: rgb(204, 204, 204); text-align: center;">What the Shit!?!?</h1>
+<ul></ul>
+
+<p style="color: rgb(153, 51, 0); background-color: rgb(255, 204, 102); text-align: center;">Colors are cool<br></p><hr style="height: 8px; width: 100%;">
+<p><a name="wat"></a>
+</p>
+
+<h2 style="text-align: center;">Panel Button Comic</h2>
+<div style="text-align: center;">One panel at a time comic.<br>
+Allow for no chance of spoiler.<br>
+Buttons for viewing individual panels.<br>
+Use external js file to keep source clean
+</div>
+<p style="text-align: center;"><img id="nuttinComic" src="images/nuttin_panel1.png" alt=""></p>
+<div style="text-align: center;"><button type="button" onclick="nuttinButton1()">1
+</button><button type="button" onclick="nuttinButton2()">2
+</button><button type="button" onclick="nuttinButton3()">3</button></div>
+<br>
+<h2 style="text-align: center;">One Time Animated Button
+Comic</h2>
+<div style="text-align: center;">1, 2 and 3 only play once
+and hold on the last frame.<br>
+4 loops forever.<br>
+This helps with linear storytelling and animations that should not loop.<br>
+It also allows view to rewatch a panel if they want to.<br>
+<br>
+<img id="MonkeyTime" src="images/MonkeyTime_panel1.gif" alt=""><br>
+<button type="button" onclick="MonkeyTimeButton1()">1</button>
+<button type="button" onclick="MonkeyTimeButton2()">2</button>
+<button type="button" onclick="MonkeyTimeButton3()">3</button>
+<button type="button" onclick="MonkeyTimeButton4()">4</button>
+<br>
+</div>
+<p></p>
+<div style="text-align: center;">
+<h2>Roll Over Panels</h2>
+Reveal images inside table with mouse.<br>
+Roll over to show them one at a time.<br>
+Great for simple mouse interactions.<br>
+Revealed image can be startic png,&nbsp;looping or onetime gif.<br>
+Also good for secret stuff!<br>
+The reveal is cool but also good for making panels change in some wayaa<br>
+<br>
+</div>
+<table style="background-color: black; text-align: left; margin-left: auto; margin-right: auto; width: 320px; height: 343px;" border="0" cellpadding="2" cellspacing="2">
+<tbody>
+<tr>
+<td style="text-align: center;"><img id="Guy" src="images/Portrait_Blank.png" alt="" onmouseover="OverGuy()" onmouseout="OutGuy()"></td>
+<td style="text-align: center;"><img id="Yeti" src="images/Portrait_Blank.png" alt="" onmouseover="OverYeti()" onmouseout="OutYeti()"></td>
+<td style="" center=""><img id="Cat" src="images/Portrait_Blank.png" alt="" onmouseover="OverCat()" onmouseout="OutCat()"></td>
+</tr>
+<tr>
+<td style="text-align: center;"><img id="Dood" src="images/Portrait_Blank.png" alt="" onmouseover="OverDood()" onmouseout="OutDood()"></td>
+<td style="text-align: center;"><img id="Pizza" onmouseover="OverPizza()" onmouseout="OutPizza()" src="images/Portrait_Blank.png" alt=""></td>
+<td style="text-align: center;"><img id="Girl" onmouseover="OverGirl()" onmouseout="OutGirl()" src="images/Portrait_Blank.png" alt=""></td>
+</tr>
+<tr>
+<td style="text-align: center;"><img id="Dick" onmouseover="OverDick()" onmouseout="OutDick()" src="images/Portrait_Blank.png" alt=""></td>
+<td style="text-align: center;"><img id="Blood" onmouseover="OverBlood()" onmouseout="OutBlood()" src="images/Portrait_Blank.png" alt=""></td>
+<td style="text-align: center;"><img id="Box" onmouseover="OverBox()" onmouseout="OutBox()" src="images/Portrait_Blank.png" alt=""></td>
+</tr>
+</tbody>
+</table>
+<p></p>
+<p></p>
+<p></p>
+<h1 style="text-align: center;">Roll Over Toggle Image</h1><div style="text-align: center;">
+Make an image different when mouse rolls over.<br>Think of as On/Off.<br>
+Encourages mouse exploration, expectation, interaction.<br>
+Some reveals may be obvious or called out before hand.<br>
+Others might be more of a surprise<br>
+</div><p style="text-align: center;"><img id="GirlClothes" src="images/GirlClothes_On.png" alt="" onmouseover="OverGirlClothes()" onmouseout="OutGirlClothes()"></p>
+<p></p>
+<p></p><h1 style="text-align: center;">Roll Over Permanent Change Image</h1><div style="text-align: center;">Clean up dust from book = permanent<br>add a button for resetting permanents if there is a lot of them<br>Combine with one time gif for really cool changing images.<br>They would transition to their new static image
+</div><p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p>Credits</p><p><a href="http://pixelation.org/index.php">Pixelation</a></p>
+<p></p>
 </body></html>
